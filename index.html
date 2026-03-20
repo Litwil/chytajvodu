@@ -232,8 +232,9 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
 .cookie p{font-size:.78rem;color:rgba(255,255,255,.55);flex:1;font-weight:300;}
 .cookie button{background:var(--blue);color:var(--white);border:none;font-family:'DM Sans',sans-serif;font-weight:500;font-size:.78rem;padding:.45rem 1.1rem;border-radius:4px;cursor:pointer;white-space:nowrap;flex-shrink:0;}
 
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
-.reveal.v{opacity:1;transform:none;}
+.reveal{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease;}
+.reveal.anim{opacity:0;transform:translateY(20px);}
+.reveal.anim.v{opacity:1;transform:none;}
 
 @media(max-width:960px){
   .hero{grid-template-columns:1fr;}
@@ -343,10 +344,10 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
 
   <div class="svc-strip">
     <div class="wrap">
-      <div class="svc-item reveal"><div class="svc-num">01</div><h4>Projekcia a návrh</h4><p>Odborný návrh systému zohľadňujúci veľkosť objektu, klimatické podmienky a individuálne požiadavky.</p></div>
-      <div class="svc-item reveal" style="transition-delay:.06s"><div class="svc-num">02</div><h4>Kalkulácia úspor</h4><p>Podrobná analýza ekonomických a ekologických výhod a optimalizácia nákladov na spotrebu vody.</p></div>
-      <div class="svc-item reveal" style="transition-delay:.12s"><div class="svc-num">03</div><h4>Výber technológie</h4><p>Pomôžeme vybrať najvhodnejšie zariadenia — od zberačov, cez filtre, až po čerpadlá a distribučné systémy.</p></div>
-      <div class="svc-item reveal" style="transition-delay:.18s"><div class="svc-num">04</div><h4>Dlhodobá podpora</h4><p>Po implementácii poskytujeme servis a podporu, aby váš systém fungoval vždy optimálne.</p></div>
+      <div class="svc-item reveal"><div class="svc-num">01</div><h4>Projekcia a návrh systémov</h4><p>Zabezpečíme vám odborný návrh systému, ktorý bude zohľadňovať veľkosť vášho objektu, klimatické podmienky a individuálne požiadavky.</p></div>
+      <div class="svc-item reveal" style="transition-delay:.06s"><div class="svc-num">02</div><h4>Kalkulácia a analýza úspor</h4><p>Poskytujeme podrobnú analýzu ekonomických a ekologických výhod systémov na zber dažďovej vody a pomôžeme vám optimalizovať náklady na spotrebu vody.</p></div>
+      <div class="svc-item reveal" style="transition-delay:.12s"><div class="svc-num">03</div><h4>Konzultácie pri výbere technológie</h4><p>Pomôžeme vám vybrať najvhodnejšie zariadenia na zber a filtráciu dažďovej vody — od zberačov vody, cez filtre, až po čerpadlá a distribučné systémy.</p></div>
+      <div class="svc-item reveal" style="transition-delay:.18s"><div class="svc-num">04</div><h4>Ekológia a udržateľnosť</h4><p>Naša expertíza v oblasti ekologických riešení vám pomôže implementovať udržateľné a efektívne technológie, ktoré znižujú vašu ekologickú stopu.</p></div>
     </div>
   </div>
 
@@ -358,6 +359,9 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
           <div class="img-art" style="flex:1"><img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=600&q=80" alt="Kvapky dažďa" style="height:100%;min-height:200px"><div class="img-art-cap">Dažďová voda</div></div>
           <div class="img-art" style="flex:1"><img src="https://images.unsplash.com/photo-1504197832061-98180058e4d7?w=600&q=80" alt="Sucho" style="height:100%;min-height:200px"><div class="img-art-cap">Sucho — prečo konať</div></div>
         </div>
+      </div>
+      <div class="prose reveal" style="margin-top:2rem;max-width:900px">
+        <p>Vodozádržný systém je navrhnutý tak aby vizuálne nenarušoval prostredie a pôsobil naturálnym dojmom. Koncept je vytvorený zo svahovej plochy zhutnenej kameňom. Zabezpečeným pevným múrikom proti zosuvu pôdy zároveň slúžiaci ako upevňovací bod krycej vode nepriepustnej fólie. Celá zachytávacia plocha je vyložená kameňom. Zberná plocha vodozádržného systému ďalej ústi do žľabu, kde sa separujú hrubé nečistoty. Zo žľabu steká potrubím D110 do filtra pevných častíc odkiaľ následne ústi do zbernej nádrže. Zberná nádrž po naplnení preteká potrubím je do trativodu. Tento naturálny systém samozrejme pre jeho plochu nieje taký efektívny ako strešný systém no je to alternatíva pre citlivé oblasti, kde by akákoľvek architektúra zbernej plochy narušila prírodný ráz krajiny.</p>
       </div>
     </div>
   </section>
@@ -378,16 +382,16 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
           <div class="eyebrow">O nás</div>
           <h2 class="h-display">Zadržiavame vodu<br>v <em>krajine aj meste</em></h2>
           <div class="prose gap-top-sm">
-            <p><strong>Venujeme sa zadržiavaniu vody v krajine a mestskom prostredí. Zabezpečujeme kompletný servis v oblasti vodozádržných systémov. Ponúkame riešenia na efektívne hospodárenie s vodou.</strong></p>
-            <p>Slovensko je jednou z mála krajín, ktoré sú bohaté na kvalitné zdroje pitnej vody. Avšak to, čo je dnes dostatok, nemusí ostať navždy. S narastajúcimi zmenami klímy sa čoraz viac dotýka aj nás téma udržania vody v krajine.</p>
-            <p>Základom vodozádržných opatrení je vytvorenie zásob vody v obdobiach, keď jej je dostatok. Počasie sa v celej Európe mení. Existujú obdobia intenzívnych dažďov, ale aj extrémne suché obdobia. Prívalové dažde väčšinou suchá pôda nedokáže rýchlo absorbovať, čo spôsobuje, že voda steká po povrchu a preteká. Tento jav vedie k povodniam, pričom voda, ktorá by mala zostať v krajine, pretečie bez úžitku. Našou úlohou je túto vodu udržať, spomaliť jej tok a využiť ju efektívne.</p>
-            <p>Jednou z alternatív, ako udržať dostatočnú rezervu vody v dobrej kvalite, je <strong>podzemná nádrž</strong>. Tá uchováva vodu v najlepších podmienkach, bez slnečného žiarenia, v stabilnej teplote medzi 6 a 12 °C (v závislosti od ročného obdobia), čo je ideálne pre jej dlhodobé skladovanie.</p>
-            <p>Najväčšou výhodou dažďovej vody je jej <strong>cena</strong>. Samozrejme, počiatočná investícia na realizáciu dostatočného rezervoára môže byť vyššia, no z dlhodobého hľadiska sa investícia určite vráti. Kľúčom k úspechu je správne navrhnuté riešenie na mieru.</p>
+            <p><strong>Venujeme sa zadržiavaniu vody v krajine a urbánnom prostredí. Zabezpečujeme komplet servis v oblasti vodozádržných systémov. Ponúkame alternatívu a riešenie hospodárenia s vodou.</strong></p>
+            <p>Slovensko je jednou z mála krajín, ktorá bola obdarovaná dostatkom kvalitných zdrojov pitnej vody. Čo je dnes dostatok, nemusí tak ostať. Zmenou klímy sa aj nás čoraz viac dotýka téma udržania vody v krajine.</p>
+            <p>Základom vodozádržných opatrení je vytvorenie si dostatočnej zásoby vody vtedy, keď jej je dostatok. Počasie sa v celej Európe mení. Sú obdobia výdatných dažďov a naopak, obdobia extrémneho sucha. Prívalové dažde nedokáže väčšinou suchá pôda rýchlo absorbovať, a tak steká po povrchu preč. Výsledkom toho sú povodne. Nárazovo potom voda, ktorá mala ostať v krajine, pretečie bez úžitku.</p>
+            <p>Túto vodu je potrebné v krajine udržať, spomaliť a mať z nej úžitok. Na sucho je dobré sa pripraviť. Vytvorenie zásob vody, keď jej je prebytok, je základ rozumného hospodárenia s vodou. Jenou z alternatív udržania dostatočnej rezervy vody v dobrej kvalite je <strong>podzemná nádrž</strong>. Podzemná nádrž uchováva vodu v najlepších podmienkach, bez slnečného žiarenia a v stálej teplote. V hĺbke 2 až 3 m pod povrchom zeme je stabilná teplota približne 6 až 12 °C v závislosti od ročného obdobia.</p>
+            <p>Túto uchovanú vodu je vhodné používať ako úžitkovú vodu vo všetkých oblastiach, napr. ako závlahu zelených plôch záhrad, na ochladzovanie exteriérov systémom vodných rozprašovačov. Dažďová voda je vhodná v domácnostiach pre jej mäkkosť, neobsahuje vodný kameň, a tak predlžuje životnosť zariadení. Rovnako je možné aplikovať dažďovú vodu v priemysle ako alternatívu úžitkovej vody.</p>
           </div>
         </div>
         <div class="reveal" style="transition-delay:.1s">
           <div class="img-frame" style="margin-bottom:1.3rem"><img src="https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=700&q=80" alt="Dážď na listoch" style="height:280px;object-fit:cover;"></div>
-          <div class="infobox terra"><p>Voda je živel. Voda je život. Voda je komodita, s ktorou je rozumné hospodáriť. Preto <strong>chytajte vodu, padá zadarmo!</strong></p></div>
+          <div class="infobox terra"><p>Voda je živel, voda je život. Voda je komodita, s ktorou je rozumné hospodáriť. Preto chytajte vodu, padá zadarmo!</p></div>
           <div class="card" style="margin-top:1.2rem">
             <div class="card-label">Zásobovanie vodou</div>
             <h3>Vytvorte si zásobu vody</h3>
@@ -419,9 +423,9 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
         <a href="#" class="btn btn-outline" onclick="show('blog');return false;">Všetky články</a>
       </div>
       <div class="g3 gap-top">
-        <a href="#" class="blog-card reveal" onclick="show('art-zasobarna');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&q=80" alt="Zásobáreň"></div><div class="blog-card-body"><div class="tag">Poradenstvo</div><h3>Investujte do vlastnej zásobárne vody. Vedec radí, ako sa pripraviť na suché Česko</h3><span class="read-more">Čítať viac →</span></div></a>
-        <a href="#" class="blog-card reveal" style="transition-delay:.07s" onclick="show('art-sucho');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1504197832061-98180058e4d7?w=500&q=80" alt="Sucho"></div><div class="blog-card-body"><div class="tag">Slovensko</div><h3>Aktuálny stav sucha na Slovensku</h3><span class="read-more">Čítať viac →</span></div></a>
-        <a href="#" class="blog-card reveal" style="transition-delay:.14s" onclick="show('art-dazdova');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=500&q=80" alt="Dažďová voda"></div><div class="blog-card-body"><div class="tag terra">Dažďová voda</div><h3>Dažďová voda</h3><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" onclick="show('art-zasobarna');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&q=80" alt="Zásobáreň"></div><div class="blog-card-body"><div class="tag">Poradenstvo</div><h3>Investujte do vlastnej zásobárne vody. Vedec radí, ako sa pripraviť na suché Česko</h3><p>Veľmi zaujímavý článok z redakcie FORBES. Česko je vyprahnuté — problémom nie je len nedostatok zrážok, ale vzrastajúca teplota.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" style="transition-delay:.07s" onclick="show('art-sucho');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1504197832061-98180058e4d7?w=500&q=80" alt="Sucho"></div><div class="blog-card-body"><div class="tag">Slovensko</div><h3>Aktuálny stav sucha na Slovensku</h3><p>Aktuálny stav sucha na Slovensku monitoruje projekt INTERSUCHO.cz/sk.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" style="transition-delay:.14s" onclick="show('art-dazdova');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=500&q=80" alt="Dažďová voda"></div><div class="blog-card-body"><div class="tag terra">Dažďová voda</div><h3>Dažďová voda</h3><p>Ako vzniká dážď? Využitie dažďovej vody, jej kvalita a vlastnosti, hospodárenie z kvapkami šetrí peniaze.</p><span class="read-more">Čítať viac →</span></div></a>
       </div>
     </div>
   </section>
@@ -444,6 +448,14 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
         </div>
         <div class="reveal" style="transition-delay:.1s">
           <div class="infobox terra" style="margin-top:0"><p>Základom vodozádržných opatrení je vytvoriť si dostatočnú zásoby vody vtedy, keď je prebytok.</p></div>
+          <div class="card" style="margin-top:1.2rem">
+            <div class="card-label">Naša ponuka</div>
+            <h3>Plastové nádrže vyrobené na Slovensku</h3>
+            <div class="prose" style="font-size:.88rem">
+              <p>Naša ponuka obsahuje kvalitné plastové nádrže na úžitkovú vodu. Všetky sú vyrobené na Slovensku. Nádrže sú vyrobené z PPR recyklátu na úžitkovú vodu a PPC alebo PE na pitnú vodu. Nádrže je možné využiť aj ako voľne stojace. Pre kvalitu vody a optimalizáciu priestoru ich ale odporúčame aplikovať pod zem.</p>
+              <p>Naše plastové nádrže sú <strong>100 % vodotesné</strong>. Sú testované póroskopom, skúšané podľa STN EN 750905. Všetky materiály, použité na styk s pitnou vodou a potravinami, sú certifikované.</p>
+            </div>
+          </div>
           <a href="#" class="btn btn-primary" style="margin-top:1.2rem;display:inline-flex" onclick="show('kalkulacia');return false;">Vypočítať objem nádrže</a>
         </div>
       </div>
@@ -460,7 +472,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
           <div class="prose reveal" style="transition-delay:.05s">
             <p>Betónové nádrže majú najlepšiu pevnosť ale zároveň obrovskú hmotnosť. Jednou z ich výhod je možnosť umiestnenia pod prístupovú cestu. Keďže ich konštrukcia môže byť prejazdná autom. (Pozor aj toto nemusí vždy platiť) Nádrž musí byť na to určená.</p>
             <p>Nevýhodou u tých lacnejších je nie vždy dokonalá vodotesnosť preto sa tieto nádrže dodatočne pretesňujú. Aj keď by sa mohlo zdať že betónové nádrže netreba pokladať na zhutnené štrkové lôžko nieje tomu tak. Hmotnosť vody plnej nádrže býva aj pre betónovú nádrž záťaž. A stáva sa že sa pri nesprávnom osadení zlomí.</p>
-            <p>Jenou z ďalších nevýhod je ich manipulácia v neprístupných lokalitách kam sa nedostane ťažká technika ktorá je na osadenie nevyhnutnosťou. Z pohľadu ekológie je betón ako materiál zodpovedný za 5% uhlíkovej stopy na svete. Rovnako ako u všetkých nádrží kupujte nádrže len z certifikátom.</p>
+            <p>Jenou z ďalších nevýhod je ich manipulácia v neprístupných lokalitách kam sa nedostane ťažká technika ktorá je na osadenie nevyhnutnosťou. Z pohľadu ekológie je betón ako materiál zodpovedný za 5% uhlíkovej stopy na svete. Rovnako ako u všetkých nádrží kupujte nádrže len s certifikátom.</p>
           </div>
           <div class="reveal" style="transition-delay:.1s">
             <div class="img-frame" style="margin-bottom:1.2rem"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=600&q=80" alt="Betónová nádrž" style="height:200px;object-fit:cover;width:100%"></div>
@@ -471,7 +483,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
       <div style="margin-top:3.5rem">
         <h3 class="reveal" style="font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--ink);margin-bottom:.7rem;padding-bottom:.8rem;border-bottom:1px solid var(--line)">Plastové nádrže</h3>
         <p class="prose reveal" style="margin-bottom:1.8rem">Plastové nádrže môžu byť zvárané, sklolaminátové, vstrekované alebo lisované z granulátov. Výhodou plastových nádrži je ich nízka hmotnosť pri správnej konštrukcii vysoká pevnosť. 100% tesnosť. Možnosť skladovania nie len úžitkovej ale aj pitnej vody. Výhody plastových materiálov je ich tvárnosť a jednoduchá opracovateľnosť.</p>
-        <p class="reveal" style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-bottom:1.2rem">Zvárané</p>
+        <h4 class="reveal" style="font-family:'DM Serif Display',serif;font-size:1.2rem;color:var(--ink);margin:.5rem 0 1.2rem">Plastové nádrže zvárané</h4>
         <div class="g2">
           <div class="prose reveal" style="transition-delay:.05s">
             <p>Plastové zvárané nádrže sa vyrábajú z plošných plastových materiálov. Podľa potrieb a spôsobu aplikácie sa zvolí presný typ plastu. Prevažne sa používa polypropylén PPR recyklát na úžitkovú vodu a PPC alebo PE na pitnú vodu. Pre aplikáciu na voľne stojace nádrže sa používajú plasty z UV odolnosťou. Všetky plastové nádrže musia spĺňať statické normy. Mali by preto obsahovať certifikát. Nie všetky nádrže na našom trhu tento certifikát majú. Čo môže v konečnom dôsledku preukázať ich nekvalitné spracovanie prípadne použitie nevhodných dimenzií a typov materiálov.</p>
@@ -482,7 +494,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
             <div class="price-box"><div class="price-label">Orientačná cena / 1 m³ (pri 10 m³)</div><div class="price-num">100 – 160 €</div></div>
           </div>
         </div>
-        <p class="reveal" style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:2.5rem 0 1.2rem">Z foriem</p>
+        <h4 class="reveal" style="font-family:'DM Serif Display',serif;font-size:1.2rem;color:var(--ink);margin:2.5rem 0 1.2rem">Plastové nádrže z foriem</h4>
         <div class="g2">
           <div class="prose reveal" style="transition-delay:.05s">
             <p>Oproti zváraným nádržiam sa nádrže z foriem líšia lepšou odolnosťou. Je to zapríčinené dizajnom monolitickej formy. Rôzne tvarové členenia plôch zabezpečujú zvýšenú pevnosť a odolnosť. Týchto tvarových mutácií je na trhu veľké množstvo. Výhodou týchto nádrží je ich nízka hmotnosť a vysoká odolnosť. Čo znamená nižšie náklady na inštaláciu. Nevýhodou týchto nádrží je ich cena ktorá je v porovnaní so zváranou vyššia.</p>
@@ -510,27 +522,84 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
       <div class="eyebrow reveal">Naše projekty</div>
       <h2 class="h-display reveal">Realizácie a <em>montáže</em></h2>
       <p class="lead reveal">Ponúkame kompletné riešenie od návrhu až po montáž a odovzdanie diela s dokumentáciou.</p>
-      <div class="g2 gap-top">
-        <div class="reveal">
-          <h3 style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--ink);margin-bottom:1.3rem">Postup realizácie</h3>
-          <div class="timeline">
-            <div class="tl-item"><h4>Konzultácia a návrh</h4><p>Bezplatná konzultácia, posúdenie požiadaviek, návrh systému na mieru a cenová kalkulácia.</p></div>
-            <div class="tl-item"><h4>Výkopové práce</h4><p>Výkopy a uloženie potrubí s tvarovkami podľa projektovej dokumentácie.</p></div>
-            <div class="tl-item"><h4>Osadenie nádrže</h4><p>Správne osadenie nádrže pre maximálnu životnosť. Montáž príslušenstva a filtračného systému.</p></div>
-            <div class="tl-item"><h4>Spätný zásyp</h4><p>Spätný zásyp a terénne úpravy podľa predpisov.</p></div>
-            <div class="tl-item"><h4>Odovzdanie diela</h4><p>Odovzdanie kompletného diela s dokumentáciou. Zaškolenie obsluhy a poradenstvo pre ďalší provoz.</p></div>
+      <!-- REALIZÁCIA 1 — 5000l -->
+      <div style="margin-top:3.5rem">
+        <h3 class="reveal" style="font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--ink);margin-bottom:1.4rem;padding-bottom:.8rem;border-bottom:1px solid var(--line)">Montáž nádrže na dažďovú vodu 5 000 l</h3>
+        <div class="g2">
+          <div class="prose reveal">
+            <h4>Prečo si klient vybral 5 000 l nádrž?</h4>
+            <p>Priemerná štvorčlenná rodina dokáže pri využívaní dažďovej vody na polievanie záhrady a splachovanie WC ušetriť až 50 % nákladov na vodné. Nádrž s objemom 5 m³ (5 000 litrov) poskytuje dostatočnú rezervu aj počas suchších letných týždňov pre záhradu s rozlohou cca 300 – 500 m².</p>
+            <h4>Priebeh prác a technické riešenie</h4>
+            <ul>
+              <li><strong>Výkopové práce:</strong> Príprava jamy s dostatočným manipulačným priestorom pre bezpečné osadenie.</li>
+              <li><strong>Príprava podložia:</strong> Vytvorenie zhutneného pieskového lôžka, ktoré chráni dno nádrže pred poškodením.</li>
+              <li><strong>Osadenie nádrže:</strong> Presné uloženie 5 000 l plastovej nádrže pomocou techniky.</li>
+              <li><strong>Napojenie na zvody:</strong> Inštalácia prítokového potrubia a bezpečnostného prepadu do vsaku.</li>
+              <li><strong>Obsyp a zhutňovanie:</strong> Postupné napúšťanie nádrže vodou súčasne s obsypávaním, aby sa vyrovnali tlaky a zabezpečila stabilita v teréne.</li>
+            </ul>
+            <div class="infobox">
+              <p><strong>Náš tip:</strong> Pri výbere nádrže nezabúdajte na filtračný kôš, ktorý zachytí lístie a nečistoty ešte pred vstupom vody do nádrže. Predĺžite tým životnosť čerpadla a udržíte vodu čistú.</p>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay:.1s">
+            <div class="card">
+              <div class="card-label">Technické parametre projektu</div>
+              <h3>Montáž podzemnej nádrže 5 000 l</h3>
+              <div class="prose" style="font-size:.88rem">
+                <ul>
+                  <li><strong>Typ nádrže:</strong> Plastová samonosná (vhodná do stabilného podložia)</li>
+                  <li><strong>Objem:</strong> 5 000 litrov</li>
+                  <li><strong>Lokalita:</strong> Žilinský kraj</li>
+                  <li><strong>Využitie:</strong> Polievanie trávnika a okrasnej záhrady</li>
+                </ul>
+              </div>
+              <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem">
+                <span class="tag">Plastová nádrž</span><span class="tag">5 000 l</span><span class="tag terra">Žilinský kraj</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="reveal" style="transition-delay:.1s">
-          <div class="card" style="margin-bottom:1.2rem">
-            <div class="card-label">Realizácia — Žilina</div><h3>Nádrž 5 000 l pre rodinný dom</h3>
-            <p>Kompletná inštalácia podzemnej plastovej nádrže na dažďovú vodu. Súčasť systému: predfilter, ponorné čerpadlo, riadiaca jednotka, napojenie na závlahu záhrady.</p>
-            <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem"><span class="tag">Plastová nádrž</span><span class="tag">5 000 l</span><span class="tag terra">Rodinný dom</span></div>
+      </div>
+
+      <!-- REALIZÁCIA 2 — 7000l -->
+      <div style="margin-top:4rem">
+        <h3 class="reveal" style="font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--ink);margin-bottom:1.4rem;padding-bottom:.8rem;border-bottom:1px solid var(--line)">Montáž nádrže na dažďovú vodu 7 000 l</h3>
+        <div class="g2">
+          <div class="prose reveal">
+            <h4>Pre koho je vhodná 7 000 l nádrž?</h4>
+            <p>Zatiaľ čo menšie nádrže slúžia primárne na polievanie, objem 7 m³ už umožňuje plnohodnotné využitie vody v celom objekte. Táto realizácia bola navrhnutá pre:</p>
+            <ul>
+              <li><strong>Záhrady nad 500 m²:</strong> Bezpečné preklenutie dlhších období sucha bez potreby dopúšťania z vodovodu.</li>
+              <li><strong>Splachovanie WC a pranie:</strong> Výrazné zníženie účtov za stočné a vodné.</li>
+              <li><strong>Rodinné domy s veľkou plochou strechy:</strong> Efektívny zber vody aj pri prudších prívalových dažďoch, kedy menšie nádrže rýchlo pretekajú.</li>
+            </ul>
+            <h4>Detailný postup montáže</h4>
+            <ul>
+              <li><strong>Rozmernejší výkop:</strong> Väčší objem si vyžaduje hlbší a širší výkop s ohľadom na sklon prítokového potrubia.</li>
+              <li><strong>Statické zabezpečenie:</strong> Podľa typu podložia sme zvolili buď samonosnú konštrukciu so silnejšou stenou, alebo variant vhodný na obetónovanie (v závislosti od spodnej vody).</li>
+              <li><strong>Filtračný systém:</strong> Inštalácia výkonného šachtového filtra, ktorý dokáže spracovať veľký prietok vody zo všetkých zvodov strechy.</li>
+              <li><strong>Technológia čerpania:</strong> Osadenie ponorného čerpadla s automatickým spínaním, ktoré dodáva vodu pod tlakom priamo do záhradných ventilov.</li>
+            </ul>
+            <div class="infobox">
+              <p>Priemerný rodinný dom na Slovensku dokáže zo strechy s plochou 120 m² zachytiť ročne až 60 000 – 80 000 litrov vody. Nádrž s objemom 7 000 l je preto ideálnym „skladom", ktorý túto vodu udrží v chlade a tme.</p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-label">Realizácia — Bratislava</div><h3>Systém pre bytový komplex</h3>
-            <p>Návrh a realizácia systému zberu dažďovej vody pre developerský projekt. Retenzná nádrž, distribučný systém pre splachovanie WC v celom objekte.</p>
-            <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem"><span class="tag">Betónová nádrž</span><span class="tag terra">Developer</span></div>
+          <div class="reveal" style="transition-delay:.1s">
+            <div class="card">
+              <div class="card-label">Technické parametre projektu</div>
+              <h3>Veľkokapacitná nádrž 7 000 l</h3>
+              <div class="prose" style="font-size:.88rem">
+                <ul>
+                  <li><strong>Typ nádrže:</strong> Robustná plastová nádrž (vhodná pre vyššie krytie zeminou)</li>
+                  <li><strong>Objem:</strong> 7 000 litrov</li>
+                  <li><strong>Hlavný cieľ:</strong> Zásobáreň vody pre automatickú závlahu a úžitkové účely</li>
+                  <li><strong>Doplnky:</strong> Integrovaný bezpečnostný prepad do vsakovacieho boxu</li>
+                </ul>
+              </div>
+              <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem">
+                <span class="tag">Plastová nádrž</span><span class="tag">7 000 l</span><span class="tag terra">Automatická závlaha</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -560,17 +629,12 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
       <h2 class="h-display reveal">Náš <em>blog</em></h2>
       <p class="lead reveal">Aktuálne informácie o vodozádržných systémoch, suchu na Slovensku a udržateľnom hospodárení s vodou.</p>
       <div class="g3 gap-top">
-        <a href="#" class="blog-card reveal" onclick="show('art-zasobarna');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&q=80" alt="Zásobáreň"></div><div class="blog-card-body"><div class="tag">Poradenstvo</div><h3>Investujte do vlastnej zásobárne vody. Vedec radí, ako sa pripraviť na suché Česko</h3><span class="read-more">Čítať viac →</span></div></a>
-        <a href="#" class="blog-card reveal" style="transition-delay:.07s" onclick="show('art-dazdova');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=500&q=80" alt="Dažďová voda"></div><div class="blog-card-body"><div class="tag terra">Dažďová voda</div><h3>Dažďová voda</h3><span class="read-more">Čítať viac →</span></div></a>
-        <a href="#" class="blog-card reveal" style="transition-delay:.14s" onclick="show('art-sucho');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1504197832061-98180058e4d7?w=500&q=80" alt="Sucho"></div><div class="blog-card-body"><div class="tag">Slovensko</div><h3>Aktuálny stav sucha na Slovensku</h3><span class="read-more">Čítať viac →</span></div></a>
-        <a href="#" class="blog-card reveal" onclick="show('art-hospodarstvo');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&q=80" alt="Hospodárstvo"></div><div class="blog-card-body"><div class="tag">Vodné hospodárstvo</div><h3>Zmena klímy a nové výzvy v oblasti vodného hospodárstva na Slovensku</h3><span class="read-more">Čítať viac →</span></div></a>
-        <a href="#" class="blog-card reveal" style="transition-delay:.07s" onclick="show('art-politika');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=500&q=80" alt="Politika SR"></div><div class="blog-card-body"><div class="tag">Politika</div><h3>Orientácia vodohospodárskej politiky Slovenskej Republiky do roku 2027</h3><span class="read-more">Čítať viac →</span></div></a>
-        <div class="card reveal" style="transition-delay:.14s;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:var(--cream2)">
-          <img src="https://chytajvodu.sk/wp-content/uploads/2020/02/CHYTAJ-VODU-.SK-LOGO-.png" alt="Logo" style="width:140px;opacity:.2;margin-bottom:1.2rem">
-          <h3>Máte otázky?</h3>
-          <p style="font-size:.88rem;margin-bottom:1.1rem;color:var(--ink3)">Kontaktujte nás a radi vám poradíme s výberom správneho riešenia.</p>
-          <a href="#" class="btn btn-primary" style="font-size:.82rem" onclick="show('kalkulacia');return false;">Kontaktovať nás</a>
-        </div>
+        <a href="#" class="blog-card reveal" onclick="show('art-zasobarna');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=500&q=80" alt="Zásobáreň"></div><div class="blog-card-body"><div class="tag">Poradenstvo</div><h3>Investujte do vlastnej zásobárne vody. Vedec radí, ako sa pripraviť na suché Česko</h3><p>Veľmi zaujímavý článok z redakcie FORBES, Autorka Michaela Černá. Česko je vyprahnuté. Problémom totiž nie je len nedostatok zrážok, ale predovšetkým vzrastajúca teplota.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" style="transition-delay:.07s" onclick="show('art-dazdova');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?w=500&q=80" alt="Dažďová voda"></div><div class="blog-card-body"><div class="tag terra">Dažďová voda</div><h3>Dažďová voda</h3><p>Ako vzniká dážď? Využite dažďovej vody, kvalita a vlastnosti dažďovej vody, hospodárenie z kvapkami šetrí peniaze.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" style="transition-delay:.14s" onclick="show('art-sucho');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1504197832061-98180058e4d7?w=500&q=80" alt="Sucho"></div><div class="blog-card-body"><div class="tag">Slovensko</div><h3>Aktuálny stav sucha na Slovensku</h3><p>Aktuálny stav sucha na Slovensku monitoruje projekt INTERSUCHO.cz/sk.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" onclick="show('art-hospodarstvo');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&q=80" alt="Hospodárstvo"></div><div class="blog-card-body"><div class="tag">Vodné hospodárstvo</div><h3>Zmena klímy a nové výzvy v oblasti vodného hospodárstva na Slovensku</h3><p>Návrh zásad a priorít vodohospodárskej politiky SR do roku 2027. Klimatická zmena prinesie predĺženie období s nedostatkom vody, ako aj nárast frekvencie povodní.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" style="transition-delay:.07s" onclick="show('art-politika');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=500&q=80" alt="Politika SR"></div><div class="blog-card-body"><div class="tag">Politika</div><h3>Orientácia vodohospodárskej politiky Slovenskej Republiky do roku 2027</h3><p>Vodohospodárska politika SR do roku 2027 sa zameriava na vodu ako na súčasť trvalo udržateľného rozvoja, tak aby vodné zdroje boli trvalo udržateľné z hľadiska kvality a množstva.</p><span class="read-more">Čítať viac →</span></div></a>
+        <a href="#" class="blog-card reveal" style="transition-delay:.14s" onclick="show('art-naturalne');return false;"><div class="blog-card-img"><img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&q=80" alt="Naturálny systém"></div><div class="blog-card-body"><div class="tag terra">Systémy</div><h3>Koncept naturálneho vodozádržného systému</h3><p>Vodozádržný systém navrhnutý tak, aby vizuálne nenarušoval prostredie a pôsobil naturálnym dojmom. Alternatíva pre citlivé oblasti.</p><span class="read-more">Čítať viac →</span></div></a>
       </div>
     </div>
   </section>
@@ -586,17 +650,9 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
     <div class="article-meta reveal"><span>2024</span><span>·</span><span>4 min čítania</span></div>
     <img class="article-hero-img reveal" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&q=85" alt="Zásobáreň dažďovej vody">
     <div class="prose reveal">
-      <p>Klimatické zmeny sa čoraz výraznejšie prejavujú na dostupnosti vody v strednej Európe. Odborníci varujú, že suchá budú čoraz dlhšie a intenzívnejšie — a to sa týka nielen Česka, ale aj Slovenska.</p>
-      <h4>Prečo práve teraz?</h4>
-      <p>Investícia do vlastnej zásobárne vody je v súčasnosti jednou z najzmysluplnejších vecí, ktoré môže majiteľ domu urobiť. Zásobník s objemom 5 000 až 10 000 litrov dokáže štvorčlennej rodine zabezpečiť zásobu úžitkovej vody na niekoľko týždňov. Pri správnom nastavení systému môže dažďová voda nahradiť až 50 % celkovej spotreby vody domácnosti.</p>
-      <h4>Praktické kroky</h4>
-      <ul>
-        <li>Zistite plochu svojej strechy — z každého 100 m² získate ročne priemerne 55 m³ dažďovej vody</li>
-        <li>Vyberte správnu veľkosť nádrže — pre rodinu 4 ľudí odporúčame minimálne 4 m³</li>
-        <li>Nainštalujte filtračný systém — predfilter zachytí hrubé nečistoty, jemný filter zabezpečí kvalitu</li>
-        <li>Prepojte systém s domácnosťou — splachovanie WC, pranie, závlaha záhrady</li>
-      </ul>
-      <p>Investícia sa zvyčajne vráti do 5–8 rokov. Z dlhodobého hľadiska ide o jedno z najlepších ekologických aj ekonomických rozhodnutí, aké môžete urobiť.</p>
+      <p>Veľmi zaujímavý článok z redakcie FORBES, Autorka Michaela Černá. Česko je vyprahnuté. Problémom totiž nie je len nedostatok zrážok, ale predovšetkým vzrastajúca teplota.</p>
+      <p>Priemerná štvorčlenná rodina dokáže pri využívaní dažďovej vody na polievanie záhrady a splachovanie WC ušetriť až 50 % nákladov na vodné. Zásobník s objemom 5 m³ (5 000 litrov) poskytuje dostatočnú rezervu aj počas suchších letných týždňov pre záhradu s rozlohou cca 300 – 500 m².</p>
+      <p>Priemerný rodinný dom na Slovensku dokáže zo strechy s plochou 120 m² zachytiť ročne až 60 000 – 80 000 litrov vody. Nádrž s objemom 5 000 l je preto ideálnym „skladom", ktorý túto vodu udrží v chlade a tme.</p>
     </div>
     <div class="article-footer reveal">
       <a href="#" class="btn btn-primary" onclick="show('kalkulacia');return false;">Získať cenovú kalkuláciu</a>
@@ -615,13 +671,17 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
     <div class="prose reveal">
       <p>Mäkká dažďová voda je vlastne minimálne znečistená destilovaná voda, a preto má mnoho vynikajúcich vlastností, vďaka ktorým je na viaceré účely vhodnejšia ako tvrdá pitná voda.</p>
       <h4>Výhody dažďovej vody</h4>
-      <p>Keďže má veľmi dobré rozpúšťacie účinky, je výborná na pranie a čistenie. Je vhodná aj na umývanie okien, karosérií áut a podlahovín – vďaka tomu, že neobsahuje minerálne látky, po vysušení nezanecháva biele stopy. Nezaná trysky záhradných rozprašovačov a kvôli jej mäkkosti sa netvorí ani sivý vodný kameň.</p>
+      <p>Keďže má veľmi dobré rozpúšťacie účinky, je výborná na pranie a čistenie. Je vhodná aj na umývanie okien, karosérií áut a podlahovín – vďaka tomu, že neobsahuje minerálne látky, po vysušení nezanecháva biele stopy. Nezaná trysky záhradných rozprašovačov a kvôli jej mäkkosti sa netvorí ani sivý vodný kameň. Ďalšou výhodou dažďovej vody je, že neobsahuje chlór. Je teda dobrá aj na polievanie kvetov, zeleniny či trávnika.</p>
+      <h4>Pôvod a charakter dažďovej vody</h4>
+      <p>Pôsobením zmeny teploty na rosný bod vyparená voda kondenzuje a padá na zem vo forme dažďa, niekedy snehu. Pôvodne čistá destilovaná voda prechodom cez atmosféru priberie jemné prachové častice a aerosoly. Nasýti sa vzdušným CO2, čím získa mierne kyslý charakter. O daždi hovoríme, keď oddelené kvapky vody padajú z mrakov na zemský povrch. Dažďovú vodu možno využiť na každodenné použitie na pranie, splachovanie WC, umývanie či polievanie rastlín. Priemyselne vyrábané dažďové systémy zaisťujú, že dažďová voda sa najprv kvalitne prefiltruje, následne je v podzemných zásobníkoch kvalitne uskladnená a nakoniec je spoľahlivo dodaná na miesto spotreby.</p>
       <h4>Osmóza a tvrdá voda</h4>
-      <p>Dažďová voda na rozdiel od pitnej neobsahuje agresívny chlór a nevyvoláva osmózu. Napríklad v Bratislave, kde má voda tvrdosť 14 nemeckých stupňov, obsahuje 1 m³ vody až 140 g solí. V Piešťanoch je to viac ako dvojnásobok.</p>
+      <p>Dažďová voda na rozdiel od pitnej neobsahuje agresívny chlór a nevyvoláva osmózu. Osmóza je chemicko-fyzikálny jav, ktorý možno znázorniť na príklade paradajky. Ak na ňu položíme kryštáliky soli, po čase sa na jej povrchu objavia kvapky vody. Tie sa na povrch paradajky dostali tzv. osmotickým tlakom. Inak povedané, zmenšili sa rozdiely v koncentrácii soli nad a pod blanou paradajky.</p>
+      <p>Ak polejeme trávnik tvrdou vodou a tá sa v letnej horúčave odparí, na listoch ostane usadený biely prášok – kryštáliky vápenatých a horečnatých solí. Tie po odparení vody začnú na povrch osmoticky vyťahovať bunkovú vodu z listov trávy. Listy sa začnú vysušovať a tráva napriek závlahe žltne. Tento jav je výraznejší pri teplejšom počasí a súvisí aj s vyšším stupňom tvrdosti vody. Napríklad v Bratislave, kde má voda tvrdosť 14 nemeckých stupňov, obsahuje 1 m³ vody až 140 g solí. V Piešťanoch je to viac ako dvojnásobok. Kvôli eliminácii javu osmózy sa čas potrebný na závlahu predlžuje.</p>
       <h4>Koľko vody môžete zachytiť?</h4>
-      <p>V strednej Európe dopadne ročne na 100 m² strechy v priemere 55 m³ dažďovej vody. Zaujímavosťou je, že dažďovou vodou sa dá nahradiť až 60 percent spotrebovanej vody v Európe.</p>
-      <h4>Kvalita a skladovanie</h4>
-      <p>Desaťročia skúseností ukázali, že o kvalitu dažďovej vody netreba mať obavy. Jej vysokú kvalitu zabezpečuje uloženie zásobníkov v hĺbke 1 až 2,5 m pod povrchom zeme bez prístupu slnečného svetla a pri teplote zeme 9 až 12 °C.</p>
+      <p>V strednej Európe dopadne ročne na 100 m² strechy v priemere 55 m³ dažďovej vody. Teoreticky by tak strecha veľkosti 160 m² pokryla celoročnú spotrebu vody štvorčlennej rodiny. Zaujímavosťou je, že dažďovou vodou sa dá nahradiť až 60 percent spotrebovanej vody v Európe.</p>
+      <h4>Projektovanie systémov</h4>
+      <p>Voda zo strechy vymýva asfalt, ktorý sfarbuje vodu i bielizeň do žlta. Takisto nie je vhodná hrdzavejúca strecha zo železa. S používaním dažďových systémov, ktoré sú vyrobené z recyklovateľných a ekologických materiálov, môžete ušetriť niekoľko stoviek eur ročne v závislosti na spotrebe vody. Už v budúcej stavbe je dôležité zabezpečiť využívanie dažďovej vody. Okrem určenia miesta uloženia zásobníkov treba dopredu určiť rozvody úžitkovej vody. Projektovanie vodozádržného budúceho systému by malo byť súčasťou každej modernej ekologickej stavebnej realizácie. Alternatíva využívania a nahradenia pitnej vody dažďovou sa v budúcnosti stane samozrejmou súčasťou výstavby. Od rodinných domov cez bytové jednotky až k priemyselným areálom.</p>
+      <div class="infobox terra" style="margin-top:1.5rem"><p>Chytať vodu je moderným, rozumným a šetrným riešením. Zatiaľ stále padá zadarmo!</p></div>
     </div>
     <div class="article-footer reveal">
       <a href="#" class="btn btn-primary" onclick="show('kalkulacia');return false;">Získať cenovú kalkuláciu</a>
@@ -639,6 +699,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
     <img class="article-hero-img reveal" src="https://images.unsplash.com/photo-1504197832061-98180058e4d7?w=900&q=85" alt="Prasknutá zem">
     <div class="prose reveal">
       <p>Viac ako polovicu Slovenska trápia extrémne suchá. A zrejme to bude čoraz horšie. S tým vzrastie aj význam zachytenia čo najväčšieho množstva dažďovej vody.</p>
+      <p>Aktuálny stav sucha na Slovensku monitoruje projekt <strong>INTERSUCHO.cz/sk</strong>.</p>
       <h4>Čo hovoria dáta?</h4>
       <p>Podľa monitoringu Slovenského hydrometeorologického ústavu sa zásoby podzemných vôd na južnom Slovensku dlhodobo znižujú. Cena vodného a stočného pritom každoročne rastie.</p>
       <h4>Fakty o suchu na Slovensku</h4>
@@ -665,7 +726,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
     <div class="article-meta reveal"><span>2023</span><span>·</span><span>5 min čítania</span></div>
     <img class="article-hero-img reveal" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=85" alt="Závlaha záhrady">
     <div class="prose reveal">
-      <p>Zmena klímy prináša na Slovensko čoraz extrémnejšie výkyvy počasia. Striedanie období intenzívnych zrážok s dlhými suchami kladie nové nároky na vodné hospodárstvo.</p>
+      <p>Návrh zásad a priorít vodohospodárskej politiky Slovenskej republiky do roku 2027. Lokálne javy ako zmena klímy a demografický vývoj predstavujú pre trvalo udržateľné využívanie vôd a najmä pre jeho kvantitatívne aspekty skutočný problém. Predpokladá sa, že klimatická zmena prinesie predĺženie období a tiež územné rozšírenie oblastí s nedostatkom vody, ako aj nárast frekvencie výskytu povodní a nimi spôsobovaných environmentálnych a hospodárskych škôd.</p>
       <h4>Výzvy pre mestá a obce</h4>
       <p>Mestá čelia problému tepelných ostrovov — zastavané plochy sa prehrievajú, dažďová voda odteká rýchlo do kanalizácie. Riešením sú zelené strechy, dažďové záhrady, retenčné nádrže a systémy na zber dažďovej vody pri verejných budovách.</p>
       <h4>Príležitosti pre domácnosti</h4>
@@ -691,7 +752,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
     <div class="article-meta reveal"><span>2022</span><span>·</span><span>4 min čítania</span></div>
     <img class="article-hero-img reveal" src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=900&q=85" alt="Slovenská krajina">
     <div class="prose reveal">
-      <p>Slovenská republika si v oblasti vodného hospodárstva stanovila ambiciózne ciele do roku 2027, ktoré reagujú na výzvy klimatickej zmeny a rastúceho tlaku na vodné zdroje.</p>
+      <p>Vodohospodárska politika SR do roku 2027 sa zameriava na vodu ako na súčasť trvalo udržateľného rozvoja, tak aby vodné zdroje boli trvalo udržateľné z hľadiska kvality a množstva t. j. aby boli schopné zabezpečovať všetky potreby ekosystémov ako aj človeka v dostatočnom množstve a v požadovanej kvalite.</p>
       <h4>Hlavné strategické ciele</h4>
       <ul>
         <li><strong>Ochrana vodných zdrojov</strong> — zlepšenie kvality povrchových a podzemných vôd v súlade so smernicou EÚ o vode</li>
@@ -708,6 +769,26 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
   </div></section>
 </div>
 
+
+<div class="page" id="page-art-naturalne">
+  <section class="section"><div class="wrap-narrow">
+    <a href="#" class="back-link" onclick="show('blog');return false;">← Späť na blog</a>
+    <div class="tag terra reveal">Systémy</div>
+    <h1 class="article-title reveal">Koncept naturálneho vodozádržného systému</h1>
+    <div class="article-meta reveal"><span>·</span><span>Realizácia</span></div>
+    <img class="article-hero-img reveal" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&q=85" alt="Naturálny vodozádržný systém">
+    <div class="prose reveal">
+      <p>Vodozádržný systém je navrhnutý tak aby vizuálne nenarušoval prostredie a pôsobil naturálnym dojmom. Koncept je vytvorený zo svahovej plochy zhutnenej kameňom. Zabezpečeným pevným múrikom proti zosuvu pôdy zároveň slúžiaci ako upevňovací bod krycej vode nepriepustnej fólie. Celá zachytávacia plocha je vyložená kameňom.</p>
+      <p>Zberná plocha vodozádržného systému ďalej ústi do žľabu, kde sa separujú hrubé nečistoty. Zo žľabu steká potrubím D110 do filtra pevných častíc odkiaľ následne ústi do zbernej nádrže. Zberná nádrž po naplnení preteká potrubím je do trativodu.</p>
+      <h4>Pre citlivé oblasti</h4>
+      <p>Tento naturálny systém samozrejme pre jeho plochu nieje taký efektívny ako strešný systém no je to alternatíva pre citlivé oblasti, kde by akákoľvek architektúra zbernej plochy narušila prírodný ráz krajiny. Časom tento systém zachytí náletové rastliny ktoré dodajú iný výraz tomuto systému a dodajú prirodzenú krásu.</p>
+    </div>
+    <div class="article-footer reveal">
+      <a href="#" class="btn btn-primary" onclick="show('kalkulacia');return false;">Získať cenovú kalkuláciu</a>
+      <a href="#" class="btn btn-outline" onclick="show('blog');return false;">← Ďalšie články</a>
+    </div>
+  </div></section>
+</div>
 
 <!-- ═══ KALKULÁCIA ═══ -->
 <div class="page" id="page-kalkulacia">
@@ -738,7 +819,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
           <div class="card" style="margin-bottom:1.2rem">
             <div class="card-label">Napíšte nám</div><h3>Email</h3>
             <p style="margin-bottom:1rem">Odpovieme do 24 hodín v pracovných dňoch.</p>
-            <a href="mailto:info@chytajvodu.sk" class="btn btn-outline" style="font-size:.88rem">info@chytajvodu.sk</a>
+            <a href="mailto:info@chytajvodu.sk" class="btn btn-primary" style="font-size:.88rem">info@chytajvodu.sk</a>
           </div>
           <div class="infobox"><p>Naša filozofia je postavená na <strong>udržateľných riešeniach</strong>, ktoré prinášajú skutočné výhody pre životné prostredie aj pre vašich klientov. S našou pomocou môžete znížiť spotrebu pitnej vody a efektívne využiť prírodné zdroje na zavlažovanie, chladenie, čistenie alebo iné aplikácie.</p></div>
         </div>
@@ -787,9 +868,10 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
 </div>
 
 <script>
-const BLOG=['art-zasobarna','art-dazdova','art-sucho','art-hospodarstvo','art-politika'];
+const BLOG=['art-zasobarna','art-dazdova','art-sucho','art-hospodarstvo','art-politika','art-naturalne'];
 const TAB={home:'home',nadrze:'nadrze',realizacie:'realizacie',blog:'blog',kalkulacia:'kalkulacia'};
 BLOG.forEach(id=>TAB[id]='blog');
+TAB['art-naturalne']='blog';
 function show(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const pg=document.getElementById('page-'+id);
@@ -807,7 +889,7 @@ document.querySelectorAll('.reveal').forEach(observeEl);
 function toggleMenu(){document.getElementById('navTabs').classList.toggle('open');}
 function handleSearch(q){
   if(!q.trim())return;
-  const map={home:['chytaj','poradenstvo','o nás','filozofia'],nadrze:['nádrže','plastová','betónová','objem'],realizacie:['realizácie','montáž','projekt'],blog:['blog','článok','sucho','voda'],kalkulacia:['kalkulácia','cena','kontakt']};
+  const map={home:['chytaj','poradenstvo','filozofia'],nadrze:['nádrže','plastová','betónová','objem'],realizacie:['realizácie','montáž'],blog:['blog','článok','sucho','voda'],kalkulacia:['kalkulácia','cena','kontakt']};
   const lq=q.toLowerCase();
   for(const[p,kws]of Object.entries(map)){if(kws.some(k=>lq.includes(k)||k.includes(lq))){show(p);return;}}
 }
