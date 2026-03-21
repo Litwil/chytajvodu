@@ -945,12 +945,22 @@ document.querySelectorAll('.reveal').forEach(observeEl);
 function toggleMenu(){document.getElementById('navTabs').classList.toggle('open');}
 function handleSearch(q){
   if(!q.trim())return;
-  const map={home:['chytaj','poradenstvo','filozofia'],nadrze:['nádrže','plastová','betónová','objem'],realizacie:['realizácie','montáž'],blog:['blog','článok','sucho','voda'],kalkulacia:['kalkulácia','cena','kontakt'],gdpr:['ochrana','údajov','gdpr']};
+  const map={
+    home:['chytaj','poradenstvo','filozofia','o nás'],
+    nadrze:['nádrže','plastová','betónová','objem'],
+    realizacie:['realizácie','montáž','projekt'],
+    blog:['blog','článok','sucho','voda','dažď'],
+    kalkulacia:['kalkulácia','cena','kontakt','dopyt'],
+    gdpr:['ochrana','údajov','gdpr','súkromia']
+  };
   const lq=q.toLowerCase();
-  for(const[p,kws]of Object.entries(map)){if(kws.some(k=>lq.includes(k)||k.includes(lq))){show(p);return;}}
+  for(const[p,kws]of Object.entries(map)){
+    if(kws.some(k=>lq.includes(k)||k.includes(lq))){show(p);return;}
+  }
 }
 window.addEventListener('scroll',()=>{
-  document.getElementById('mainNav').style.boxShadow=scrollY>30?'0 1px 20px rgba(26,24,20,.08)':'none';
+  const nav=document.getElementById('mainNav');
+  if(nav)nav.style.boxShadow=scrollY>30?'0 1px 20px rgba(26,24,20,.08)':'none';
 });
 </script>
 </body>
