@@ -808,7 +808,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
             <div class="field"><label>Správa / požiadavky</label><textarea placeholder="Opíšte váš projekt, lokalitu, požiadavky…"></textarea></div>
             <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="alert('Ďakujeme za váš záujem! Budeme vás kontaktovať.')">Odoslať dopyt</button>
           </div>
-          <p style="font-size:.75rem;color:var(--ink3);margin-top:.7rem;font-weight:300">Odoslaním súhlasíte so <a href="https://chytajvodu.sk/ochrana-sukromia/" target="_blank" style="color:var(--blue)">zásadami ochrany osobných údajov</a>.</p>
+          <p style="font-size:.75rem;color:var(--ink3);margin-top:.7rem;font-weight:300">Odoslaním súhlasíte so <a href="#" onclick="show('gdpr');return false;">zásadami ochrany osobných údajov</a>.</p>
         </div>
         <div class="reveal" style="transition-delay:.1s">
           <div class="card" style="margin-bottom:1.2rem">
@@ -830,6 +830,61 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
 
 
 <!-- ═══ FOOTER ═══ -->
+
+<!-- ═══ OCHRANA OSOBNÝCH ÚDAJOV ═══ -->
+<div class="page" id="page-gdpr">
+  <section class="section">
+    <div class="wrap-narrow">
+      <div class="eyebrow">Právne informácie</div>
+      <h2 class="h-display">Zásady ochrany <em>osobných údajov</em></h2>
+      <div class="prose gap-top-sm">
+        <h4>Kto sme</h4>
+        <p>Spoločnosť Anunu, s.r.o. — vodozádržné systémy chytajvodu.sk</p>
+        <p><strong>CEO:</strong> Mgr. art. Daniel Dodok<br>
+        <strong>Anunu, s.r.o.</strong><br>
+        IČO: 52 296 873<br>
+        DIČ: 212 097 6330<br>
+        Fakturačná adresa: Bratislavská 59, 013 41, Dolný Hričov, Slovensko<br>
+        Adresa našej webovej stránky je: http://chytajvodu.sk</p>
+
+        <h4>Aké osobné údaje získavame a prečo ich zbierame</h4>
+        <p><strong>Komentáre</strong><br>
+        Keď návštevníci webu zanechavajú na stránke komentáre, zbierame údaje, ktoré sú zobrazené vo formulári komentára a taktiež IP adresu používateľov a user-agent prehliadača z dôvodu ochrany proti spamu.</p>
+        <p>Anonymizovaný reťazec vytvorený z vašej e-mailovej adresy (nazývaný aj hash) môže byť poskytnutý službe Gravatar pre overenie, či ju používate. Zásady ochrany osobných údajov služby Gravatar nájdete na: https://automattic.com/privacy/. Po schválení vášho komentára bude vaša profilová fotografia verejne zobrazená spolu s obsahom vášho komentára.</p>
+        <p><strong>Multimédiá</strong><br>
+        Pri nahrávaní obrázkov na webovú stránku by ste sa mali vyhnúť nahrávaniu obrázkov s EXIF GPS údajmi o polohe. Návštevníci webu môžu stiahnuť a zobraziť akékoľvek údaje o polohe z obrázkov.</p>
+        <p><strong>Kontaktné formuláre</strong><br>
+        Údaje zadané v kontaktnom formulári sú použité výlučne na účely odpovede na vašu požiadavku a nie sú poskytované tretím stranám.</p>
+
+        <h4>Súbory cookies</h4>
+        <p>Ak pridáte komentár na našej stránke, môžete súhlasiť s uložením vášho mena, e-mailovej adresy a webovej stránky do súborov cookies. Je to pre vaše pohodlie, aby ste nemuseli opätovne vypĺňať vaše údaje znovu pri pridávaní ďalšieho komentára. Tieto súbory cookies sú platné jeden rok.</p>
+        <p>Ak navštívite našu stránku prihlásenia, uložíme dočasné súbory cookies na určenie toho, či váš prehliadač akceptuje súbory cookies. Tieto súbory cookies neobsahujú žiadne osobné údaje a sú odstránené pri zatvorení prehliadača.</p>
+        <p>Pri prihlásení nastavíme niekoľko súborov cookies, aby sme uložili vaše prihlasovacie údaje a nastavenia zobrazenia. Prihlasovacie cookies sú platné dva dni a nastavenia zobrazenia jeden rok. Ak zvolíte možnosť „zapamätať", vaše prihlásenie bude platné dva týždne. Pri odhlásení sa z vášho účtu sú súbory cookies odstránené.</p>
+        <p>Pri úprave alebo publikovaní článku budú vo vašom prehliadači uložené dodatočné súbory cookies. Tieto súbory cookies neobsahujú žiadne osobné údaje a odkazujú iba na ID článku, ktorý ste upravovali. Súbory sú platné 1 deň.</p>
+
+        <h4>Vložený obsah z iných webových stránok</h4>
+        <p>Články na tejto webovej stránke môžu obsahovať vložený obsah (napr. videá, obrázky, články a podobne). Vložený obsah z iných stránok sa chová rovnako, akoby návštevník navštívil inú webovú stránku.</p>
+        <p>Tieto webové stránky môžu o vás zbierať osobné údaje, používať súbory cookies, vkladať treťo-stranné sledovanie a monitorovať vašu interakciu s vloženým obsahom, včetne sledovania vašej interakcie s vloženým obsahom, ak na danej webovej stránke máte účet a ste prihlásený.</p>
+
+        <h4>Ako dlho uchovávame vaše údaje</h4>
+        <p>Pri pridávaní komentára, komentár a jeho metaúdaje sú uchovávané oddelene. Vďaka tomu vieme automaticky rozpoznať a schváliť akékoľvek súvisiace komentáre bez toho, aby museli byť podržané na moderáciu.</p>
+        <p>Pre používateľov, ktorí sa zaregistrujú na našich webových stránkach (ak takí existujú), ukladáme aj osobné údaje, ktoré poskytujú, do ich užívateľského profilu. Všetci používatelia môžu kedykoľvek zobraziť, upraviť alebo odstrániť svoje osobné údaje (okrem zmeny používateľského mena). Správcovia webových stránok tiež môžu zobraziť a upraviť tieto informácie.</p>
+
+        <h4>Aké práva máte nad svojimi údajmi</h4>
+        <p>Ak na tejto webovej stránke máte účet, alebo ste tu pridali komentár, môžete požiadať o export vašich osobných údajov, ktoré o vás ukladáme, včetne údajov, ktoré ste nám poskytli. Môžete tak isto požiadať o vymazanie osobných údajov. To sa ale netýka údajov, ktoré o vás musíme uchovávať z administratívnych, právnych alebo bezpečnostných dôvodov.</p>
+
+        <h4>Kam posielame vaše údaje</h4>
+        <p>Komentáre návštevníkov môžu byť kontrolované prostredníctvom automatizovanej služby na detekciu spamu.</p>
+
+        <h4>Kontaktné informácie</h4>
+        <p><strong>Email:</strong> info@chytajvodu.sk<br>
+        <strong>Telefón:</strong> 0902 818 902<br>
+        <strong>Adresa:</strong> Dolný Hričov</p>
+      </div>
+    </div>
+  </section>
+</div>
+
 <footer>
   <div class="footer-grid">
     <div>
@@ -845,7 +900,7 @@ footer{background:var(--ink);padding:4.5rem 6% 2.5rem;}
         <li><a href="#" onclick="show('realizacie');return false;">Realizácie</a></li>
         <li><a href="#" onclick="show('blog');return false;">Blog</a></li>
         <li><a href="#" onclick="show('kalkulacia');return false;">Cenová kalkulácia</a></li>
-        <li><a href="https://chytajvodu.sk/ochrana-sukromia/" target="_blank">Ochrana osobných údajov</a></li>
+        <li><a href="#" onclick="show('gdpr');return false;">Ochrana osobných údajov</a></li>
       </ul>
     </div>
     <div class="f-col">
@@ -872,6 +927,7 @@ const BLOG=['art-zasobarna','art-dazdova','art-sucho','art-hospodarstvo','art-po
 const TAB={home:'home',nadrze:'nadrze',realizacie:'realizacie',blog:'blog',kalkulacia:'kalkulacia'};
 BLOG.forEach(id=>TAB[id]='blog');
 TAB['art-naturalne']='blog';
+TAB['gdpr']='gdpr';
 function show(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const pg=document.getElementById('page-'+id);
@@ -889,7 +945,7 @@ document.querySelectorAll('.reveal').forEach(observeEl);
 function toggleMenu(){document.getElementById('navTabs').classList.toggle('open');}
 function handleSearch(q){
   if(!q.trim())return;
-  const map={home:['chytaj','poradenstvo','filozofia'],nadrze:['nádrže','plastová','betónová','objem'],realizacie:['realizácie','montáž'],blog:['blog','článok','sucho','voda'],kalkulacia:['kalkulácia','cena','kontakt']};
+  const map={home:['chytaj','poradenstvo','filozofia'],nadrze:['nádrže','plastová','betónová','objem'],realizacie:['realizácie','montáž'],blog:['blog','článok','sucho','voda'],kalkulacia:['kalkulácia','cena','kontakt'],gdpr:['ochrana','údajov','gdpr']};
   const lq=q.toLowerCase();
   for(const[p,kws]of Object.entries(map)){if(kws.some(k=>lq.includes(k)||k.includes(lq))){show(p);return;}}
 }
